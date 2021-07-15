@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link rel="stylesheet" href="css/resetstyle.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="background-color:#1b314d;">
+    <nav class="nav-main">
+        <div class="btn-toggle-nav" onclick="toggleNav()"></div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Exercises</a></li>
+            <li><a href="#">About Us</a></li>
+        </ul>
+    </nav>
+
+    <aside class="nav-sidebar">
+        <ul>
+            <li><span>Courses</span></li>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">JAVASCRIPT</a></li>
+            <li><a href="#">PYTHON</a></li>
+            <li><a href="#">SQL</a></li>
+        </ul>
+    </aside>
+
+    <form class="parent" action="" method="POST">
+        <div>
+            <input type="text" name="username" placeholder="Username">
+        </div>
+        <div>
+            <input type="password" name="password" placeholder="Password">
+        </div>
+        <button class="login" type="submit">Login</button>
+
+        <button class="signup" onclick="location.href='signup.html'" type="button">Signup</button>
+    </form>
+
+    <h2 class="contact-us">
+        Contact us
+    </h2>
+
+    <div class="container-contact">
+        <div>
+            <img src="img/img-01.png" alt="letter" style="width: 400px;">
+        </div>
+        <form action="">
+            <label for="fname" style="color: white;">First Name</label>
+            <input class="input2" type="text" id="fname" name="firstname" placeholder="Your name..">
+
+            <label for="lname" style="color: white;">Last Name</label>
+            <input class="input2" type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+            <label for="email" style="color: white;">Enter your email:</label>
+            <input class="input2" type="email" id="email" name="email" placeholder="Your email..">
+
+            <label for="subject" style="color: white;">Subject</label>
+            <textarea class="input2" id="subject" name="subject" placeholder="Write something.."></textarea>
+
+            <input type="submit" value="Submit" class="btn-submit">
+        </form>
+    </div>
+  
+</body>
+<script src="js/main.js">
+        
+</script>
+</html>

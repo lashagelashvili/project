@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/resetstyle.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Courses</title>
+</head>
+<body>
+
+    <nav class="nav-main">
+        <div class="btn-toggle-nav" onclick="toggleNav()"></div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Exercises</a></li>
+            <li><a href="#">About Us</a></li>
+        </ul>
+    </nav>
+
+    <aside class="nav-sidebar">
+        <ul>
+            <li><span>Courses</span></li>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">JAVASCRIPT</a></li>
+            <li><a href="#">PYTHON</a></li>
+            <li><a href="#">SQL</a></li>
+        </ul>
+    </aside>
+
+    <form class="parent" action="" method="POST">
+        <div>
+            <input type="text" name="username" placeholder="Username">
+        </div>
+        <div>
+            <input type="password" name="password" placeholder="Password">
+        </div>
+        <button class="login" type="submit">Login</button>
+        
+        
+        <button class="signup" onclick="location.href='signup.html'" type="button">Signup</button>
+        
+    </form>
+
+    <div class="container">
+        <img src="img/blur3.jpg" alt="background" id="background-img">
+        <h1 class="text1">Free Online Courses</h1>
+        <p class="text2">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>Labore possimus modi tempore dignissimos incidunt molestias fuga, velit eveniet harum consequatur!</p>
+    </div>
+
+    <div class="search-container">
+        <div>
+        <input class="search-input" type="search" id="site-search" name="q" placeholder="Search courses">
+        </div>
+        <div>
+            <button class="btn-search">Search</button>
+        </div>
+    </div>
+
+    <div class="container-main">
+        <div class="maincontent">
+            <div>
+                <h2 class="mainh2">About The Company/Service</h2>
+                <p class="mainp">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis optio nemo nesciunt, nostrum explicabo ad, ab illo eum, repudiandae officia expedita. Labore fugit laboriosam repellendus corrupti accusamus ad nobis perferendis, facere commodi.<br> Ex odit nobis dicta consectetur, neque magni beatae suscipit accusantium totam doloremque dolorum nemo dolore commodi sequi! In.</p>
+            </div>
+            <div>
+                <img class="mainimg" src="img/aboutus.jpg" alt="news">
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+<script src="js/main.js">
+        
+</script>
+</html>

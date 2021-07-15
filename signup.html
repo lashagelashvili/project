@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="css/resetstyle.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="background-color:#1b314d;">
+    <nav class="nav-main">
+        <div class="btn-toggle-nav" onclick="toggleNav()"></div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Exercises</a></li>
+            <li><a href="#">About Us</a></li>
+        </ul>
+    </nav>
+
+    <aside class="nav-sidebar">
+        <ul>
+            <li><span>Courses</span></li>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">JAVASCRIPT</a></li>
+            <li><a href="#">PYTHON</a></li>
+            <li><a href="#">SQL</a></li>
+        </ul>
+    </aside>
+
+    <form class="parent" action="" method="POST">
+        <div>
+            <input type="text" name="username" placeholder="Username">
+        </div>
+        <div>
+            <input type="password" name="password" placeholder="Password">
+        </div>
+        <button class="login" type="submit">Login</button>
+
+        <button class="signup">Signup</button>
+    </form>
+
+    <h1 class="signup-h1">Signup</h1>
+
+    <div class="container-signup">
+        <form id="registration" action="" method="POST">
+            <div>
+                <input class="signup-input" type="text" name="username" placeholder="Username.." style="height: 25px;">
+                <div class="error_text" id="error_username"></div>
+            </div>
+            <div>
+                <input class="signup-input" type="password" name="password" placeholder="Password.." style="height: 25px;">
+                <div class="error_text" id="error_password"></div>
+            </div>
+            <div>
+                <input class="signup-input" type="password" name="password2" placeholder="Repeat Password.." style="height: 25px;">
+                <div class="error_text" id="error_password2"></div>
+            </div>
+
+            <div>
+                <input type="checkbox" name="agree">
+                <label for="" style="color: white;">I agree terms and conditions</label>
+                <div class="error_text" id="error_agree"></div>
+            </div>
+            <button type="submit" class="btn-signup">Signup</button>
+        </form>
+    </div>
+
+
+    <script src="js/main.js">
+        
+    </script>
+</body>
+</html>
