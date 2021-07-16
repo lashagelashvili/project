@@ -50,6 +50,10 @@ input[type=text], input[type=password] {
     opacity: 0.8;
 }
 
+a:hover {
+    background-color: #042230;
+}
+
 .nav-main {
     position: fixed;
     top: 0;
@@ -58,18 +62,22 @@ input[type=text], input[type=password] {
     background-color: #052b3e;
     display: flex;
     flex-wrap: wrap;
-    z-index: 1000;
+    z-index: 3000;
 }
 
 .parent {
     position: fixed;
     display: flex;
-    z-index: 2000;
+    z-index: 3000;
     justify-content: flex-end;
-    width: 100%;
     padding-top: 16px;
     margin-left: -40px;
     gap: 5px;
+}
+
+.main-parent {
+    width: 580px;
+    float: right;
 }
 
 .btn-toggle-nav {
@@ -324,8 +332,11 @@ section {
 }
 
 .error_text {
+    position: relative;
     color: red;
-    height: 30px;
+    height: 20px;
+    font-size: 14px;
+    top: -35px;
 } 
 
 .signup-input {
